@@ -47,4 +47,6 @@ $("#btnLogout").click(function() {
     location.replace("../");
 
 });
+
+
 </script>

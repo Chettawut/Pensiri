@@ -1,4 +1,5 @@
 <?php
+include_once('config.php');
 define('ROOT_CSS',str_replace("\\",'/',dirname(__FILE__)));
 define('PATH_CSS', ROOT_CSS == $_SERVER['DOCUMENT_ROOT']
     ?'' :substr(ROOT_CSS,strlen($_SERVER['DOCUMENT_ROOT']))
@@ -9,8 +10,8 @@ define('PATH_CSS', ROOT_CSS == $_SERVER['DOCUMENT_ROOT']
 <!-- Font Awesome -->
 <link rel="stylesheet" href="<?php echo PATH_CSS; ?>/AdminLTE-3.0.5/plugins/fontawesome-free/css/all.min.css">
 <!-- Ionicons -->
-<link rel="stylesheet"
-    href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<!-- <link rel="stylesheet"
+    href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
 <!-- Tempusdominus Bbootstrap 4 -->
 <link rel="stylesheet"
     href="<?php echo PATH_CSS; ?>/AdminLTE-3.0.5/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
@@ -27,4 +28,4 @@ define('PATH_CSS', ROOT_CSS == $_SERVER['DOCUMENT_ROOT']
 <!-- summernote -->
 <link rel="stylesheet" href="<?php echo PATH_CSS; ?>/AdminLTE-3.0.5/plugins/summernote/summernote-bs4.css">
 <!-- Google Font: Source Sans Pro -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> -->
