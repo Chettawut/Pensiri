@@ -1,6 +1,5 @@
-<?php
-            $title = "Finished Goods
-            ";
+    <?php
+            $title = "Quality Control";
         ?>
 
     <!DOCTYPE html>

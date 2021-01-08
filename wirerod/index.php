@@ -1,6 +1,5 @@
 <?php
-            $title = "Finished Goods
-            ";
+            $title = "Wirerod";
         ?>
 
     <!DOCTYPE html>

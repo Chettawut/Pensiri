@@ -4,53 +4,22 @@
 <head>
     <meta charset="tis-620">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>โปรแกรมผู้ถือหุ้น</title>
+    <title>Steel Wire System</title>
     <!-- Bootstrap core CSS -->
     
     <?php include_once('import_css.php'); ?>
 
     <style>
     body {
-        background: url("img/bg.jpg") no-repeat center fixed;
+        background: url("img/Main_BG11.jpg") no-repeat center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
     }
-
-    .modal-dialog-full-width {
-        width: 100% !important;
-        height: 100% !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        max-width: none !important;
-
-    }
-
-    .modal-content-full-width {
-        height: auto !important;
-        min-height: 100% !important;
-        border-radius: 0 !important;
-        background-color: #ececec !important
-    }
-
-    .modal-header-full-width {
-        border-bottom: 1px solid #9ea2a2 !important;
-    }
-
-    .modal-footer-full-width {
-        border-top: 1px solid #9ea2a2 !important;
-    }
-
-    a.w3-left {
-        font-size: 17px;
-        border: 1px solid #cccccc;
-        background-color: #4CAF50;
-        color: #ffffff;
-        padding: 5px;
-        margin: 25px 50px 0px 25px;
-        border-color: #4CAF50;
-        width: 100px;
-        height: 40px;
+    #page_main{
+        transition: 0.3s;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     </style>
 
@@ -67,7 +36,7 @@ $votepage = 10;
 
     <div name="page_main" id="page_main" class="row justify-content-md-center" style="margin-top:120px;">
 
-        <div class="col-xs-8 col-lg-4 ">
+        <div class="col-xs-8 col-lg-4">
             <div id="demo" class="carousel slide" style="text-align:center;">
 
 
@@ -76,26 +45,30 @@ $votepage = 10;
                         <?php 
                         // include_once('conn.php')
                         ?>
-                        <h3 style="margin-bottom:5px;">เมนูระบบ </h3>
+                        <h3 style="margin-bottom:5px;">Steel Wire System </h3>
                         <br>
                         <!-- <button id="modalActivate" data-toggle="modal" data-target="#exampleModalPreview" type="button"
                             style="margin-bottom:10px;" class="btn btn-primary btn-lg btn-block"
                             onclick="openFullscreen();">Production</button>
                         <br> -->
                         <button type="button" style="margin-bottom:10px;"
+                            class="btn btn-primary btn-lg btn-block" onclick="location.replace('wirerod', '_blank');">Wirerod</button>
+                        <br>                        
+                        <button type="button" style="margin-bottom:10px;"
                             class="btn btn-primary btn-lg btn-block" onclick="location.replace('FG');">Production</button>
                         <br>
                         <button type="button" style="margin-bottom:10px;"
                             class="btn btn-primary btn-lg btn-block" onclick="location.replace('QC', '_blank');">QC</button>
                         <br>                        
-
                         <button type="button" style="margin-bottom:10px;"
-                            class="btn btn-primary btn-lg btn-block" onclick="location.replace('Logictic', '_blank');">Logistic</button>
-                        <br>
-
-                        <button type="button" style="margin-bottom:10px;"
-                            class="btn btn-primary btn-lg btn-block" onclick="location.replace('wirerod', '_blank');">Wirerod</button>
+                            class="btn btn-primary btn-lg btn-block" onclick="location.replace('wirerod', '_blank');">Sale Order</button>
                         <br>                        
+
+                        <button type="button" style="margin-bottom:10px;"
+                            class="btn btn-primary btn-lg btn-block" onclick="location.replace('delivery', '_blank');">Delivery</button>
+                        <br>
+                        
+                        
                         
                         <button id="btnSetting" type="button" style="margin-bottom:10px;"
                             class="btn btn-secondary btn-lg btn-block">ตั้งค่าค่าตั้งต้น</button>
