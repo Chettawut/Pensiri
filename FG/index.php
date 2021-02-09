@@ -287,15 +287,15 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr id="tr1">
+                                <!-- <tr id="tr1">
                                     <td id="td1"><input type="text" id="input1" name="date" value=""></td>
-                                    <td><input type="text" id="test"></td>
-                                    <td><input type="text" id="test"></td>
-                                    <td><input type="text" id="test"></td>
-                                    <td><input type="text" id="test"></td>
-                                    <td><input type="text" id="test"></td>
-                                    <td id="td6"><input id="input6" type="text" ></td>
-                                </tr>
+                                    <td id="td2"><input type="text" id="test"></td>
+                                    <td id="td3"><input type="text" id="test"></td>
+                                    <td id="td4"><input type="text" id="test"></td>
+                                    <td id="td5"><input type="text" id="test"></td>
+                                    <td id="td6"><input id="input6" type="text"></td>
+                                    <td id="td7"><input id="input7" type="text"></td>
+                                </tr> -->
                             </tbody>
                         </table>
 
