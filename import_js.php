@@ -39,14 +39,19 @@ $.widget.bridge('uibutton', $.ui.button)
 <script src="<?php echo PATH_JS; ?>//AdminLTE-3.0.5/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo PATH_JS; ?>//AdminLTE-3.0.5/dist/js/demo.js"></script>
+<!-- DataTables -->
+<script src="<?php echo PATH_JS; ?>//AdminLTE-3.0.5/plugins/datatables/jquery.dataTables.min.js">
+</script>
+<script src="<?php echo PATH_JS; ?>//AdminLTE-3.0.5/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js">
+</script>
 
 
 <script>
-$("#btnLogout").click(function() {
+// $("#btnLogout").click(function() {
 
-    location.replace("../");
+//     location.replace("../");
 
-});
+// });
 
 
 </script>

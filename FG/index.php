@@ -2,7 +2,7 @@
             $title = "Finished Goods
             ";
         ?>
-
+<?php include_once('../conn.php'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -14,6 +14,7 @@
 
     <?php include_once('../css_dos.php'); ?>
     <?php include_once('css.php'); ?>
+
 
 </head>
 
@@ -117,135 +118,24 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body p-0">
-                            <div class="table-responsive">
-                                <table id="tableData" class="table m-0">
-                                    <thead>
-                                        <tr>
-                                            <th>รหัส</th>
-                                            <th>Charge</th>
-                                            <th>Coilno</th>
-                                            <th>วันที่ผลิต</th>
-                                            <th>DIAM</th>
-                                            <th>ลักษณะลวด</th>
-                                            <th>Tenslie</th>
-                                            <th>Yield</th>
-                                            <th>P</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                        <tr>
-                                            <td>PCW52</td>
-                                            <td>524-20103</td>
-                                            <td>2203</td>
-                                            <td>25/12/2020</td>
-                                            <td>4.98</td>
-                                            <td>1</td>
-                                            <td>199.89</td>
-                                            <td>181.43</td>
-                                            <td>Y</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <table id="tableData" class="table m-0">
+                                <thead>
+                                    <tr>
+                                        <th>รหัส</th>
+                                        <th>Charge</th>
+                                        <th>Coilno</th>
+                                        <th>วันที่ผลิต</th>
+                                        <th>DIAM</th>
+                                        <th>ลักษณะลวด</th>
+                                        <th>Tenslie</th>
+                                        <th>Yield</th>
+                                        <th>P</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
                             <!-- /.table-responsive -->
                         </div>
                         <!-- /.card-body -->
@@ -277,25 +167,16 @@
                         <table id="tableAdd" class="table table-striped">
                             <thead>
                                 <tr>
+                                    <td>รหัส</td>
                                     <td>Charge</td>
-                                    <td>Coil No.</td>
-                                    <td>น.น.</td>
-                                    <td>Export</td>
-                                    <td>ลูกค้า</td>
-                                    <td>Relax</td>
-                                    <td>Bobbin</td>
+                                    <td>Coilno</td>
+                                    <td>วันที่ผลิต</td>
+                                    <td>DIAM</td>
+                                    <td>ลักษณะลวด</td>
+                                    <td>Tensile</td>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- <tr id="tr1">
-                                    <td id="td1"><input type="text" id="input1" name="date" value=""></td>
-                                    <td id="td2"><input type="text" id="test"></td>
-                                    <td id="td3"><input type="text" id="test"></td>
-                                    <td id="td4"><input type="text" id="test"></td>
-                                    <td id="td5"><input type="text" id="test"></td>
-                                    <td id="td6"><input id="input6" type="text"></td>
-                                    <td id="td7"><input id="input7" type="text"></td>
-                                </tr> -->
                             </tbody>
                         </table>
 
