@@ -1,5 +1,5 @@
 <?php
-            $title = "Wirerod
+            $title = "WIRE ROD
             ";
         ?>
 <?php include_once('../conn.php'); ?>
@@ -160,9 +160,48 @@
                     <div class="modal-header" style="display:inline-block;text-align:center;">
                         <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                     aria-hidden="true">&times;</span></button> -->
-                        <h4 class="modal-title" id="myModalLabel">เพิ่มสินค้า</h4>
+                        <h4 class="modal-title" id="myModalLabel">รับเข้าวัตถุดิบ WIRE ROD</h4>
                     </div>
                     <div class="modal-body" style="overflow-x: scroll;">
+
+                        <div class="row">
+                            <div class="col-sm-3 my-1">
+                                <label >รหัสผู้จำหน่าย</label>
+                                <input type="text" class="form-control" id="inlineFormInputName" placeholder="Jane Doe">                                
+                                
+                                <button type="button" class="btn btn-primary active" data-toggle="modal"
+                                    data-target="#modal_one">
+                                    <span class="fa fa-search"></span></button>
+
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1">ตั้งแต่</span>
+                                    <input name="min" id="min" class="form-control" type="text">
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1">จนถึง</span>
+                                    <input name="max" id="max" class="form-control" type="text">
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1"></span>
+                                    <select name="pay_status" id="pay_status" class="form-control">
+                                        <option value=''>ทั้งหมด</option>
+                                        <option value='Y'>จ่ายแล้ว</option>
+                                        <option value='N'>ยังไม่จ่าย</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                        </div>
 
                         <table id="tableAdd" class="table table-striped">
                             <thead>
